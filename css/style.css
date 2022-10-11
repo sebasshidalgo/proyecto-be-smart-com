@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*
+font-family: 'Exo 2', sans-serif;
+font-family: 'Roboto Mono', monospace;
+*/
+
+header{
+    background-color:rgba(37, 104, 248, 0.815);
+}
+
+main{
+    background-color: rgba(236, 138, 245, 0.555);
+}
+
+footer{
+    background-color: rgba(18, 143, 245, 0.473);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+    display:flex;
+    justify-content: center;
+}
+
+.banner{
+    font-family: 'Exo 2', sans-serif;
+    width: 25%;
+    font-size:45px;
+    background-color: rgba(146, 54, 233, 0.918); 
+    border-radius: 30px 0px 30px 0px;
+    margin-left: 25px;
+    margin-bottom: 25px; 
+    position:relative;
+    top: 15px;    
+}
+
+h1{
+    color: white;
+    text-align: center;  
+}
+
+.banner h1 a{
+    text-decoration: none;
+    color: white;
+}
+
+.menuProductos{
+    text-align: center;
+    display: flex;
+    justify-content:left;
+    list-style: none;
+    margin-right: 15px;
+}
+
+.menuProductos li a{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(42, 6, 126);
+    line-height: 1.4;
+}
+.navBar{
+    text-align: center;
+    display:flex;
+    margin-left: 15px;
+    justify-content: right;
+}
+
+.navBar li{
+    list-style: none;
+}
+
+.navBar li a{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: rgba(23, 7, 61, 0.945);
+    line-height: 1.4;  
+    justify-content:flex-start;
+    display: flex;
+    margin-left: 15px;
+}    
+
+.boton{
+    background-color: rgb(80, 182, 241);
+    border-radius: 30px 0px 30px 0px;
+    padding: 1px;
+    margin-right: 5px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.prod{
+    background-color: rgba(236, 45, 236, 0.692);
+    margin-bottom: 10px;
+}
+
+.productos{
+    text-decoration: none;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 30px;
+    color: black;
+    padding-left: 15px;
+}
+
+.subtitulos{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+
+.caracteristicas{
+    font-family: 'Roboto Mono', monospace;
+    padding-left: 15px;
+}
+
+.especificaciones{
+    font-family: 'Roboto Mono', monospace;
+    font-style: italic;
+    padding-top: 5px;
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.videos{
+    display: flex;
+    justify-content: center;
+    padding-top: 2px;
+    padding-bottom: 10px;
+}
+
+.noticias{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+.subtitulos h4{
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.subtitulos h2{
+    padding-bottom: 2px;
+}
+
+.noticias p{
+    font-style: italic;
+    padding-top: 3px;
+    margin-right: 3px;
+}
+
+legend{
+    font-family: 'Roboto Mono', monospace;
+    font-style: oblique;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.consultas label{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.casilleros{
+    width: 400px;
+}
+
+.tC{
+    position: relative;
+    align-self:flex-start;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.enviarFormulario{
+    margin-left: 15px;
+    margin-bottom: 10px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
+    font-weight:lighter;
+    padding: 3px;
+    background-color: rgba(28, 96, 241, 0.61);
+}
+
+.contactInfo{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 25px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.contactData{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    font-style: oblique;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    line-height: 2;
+    list-style: none;
+}
+
+.mapa{
+    margin-left: 15px;
+    padding-bottom: 10px;
+}
