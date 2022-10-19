@@ -103,12 +103,10 @@ h1 {
   padding: 1px;
   margin-right: 5px;
   width: 150px;
-  margin-bottom: 10px;
 }
 
 .prod {
   background-color: rgba(236, 45, 236, 0.692);
-  margin-bottom: 10px;
 }
 
 /*contenido y textos del main*/
@@ -238,7 +236,7 @@ legend {
 
 /******GRIDS******/
 
-/*header*/
+/*header index (este header posee banner y navbar)*/
 
 .grid-container-1 {
   display: grid;
@@ -248,6 +246,29 @@ legend {
   grid-template-areas: "banner banner navBar";
   justify-content: center;
   align-items: center;
+}
+
+/*header pages (este header tiene ademas del banner y la navbar un menu de productos)*/
+
+.grid-container-1-bis{
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: 
+  "banner banner banner"
+  "nav-2 none nav-1";
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-1{
+  grid-area: nav-1;
+}
+
+.nav-2{
+  grid-area: nav-2;
+  margin-left: 25px;
 }
 
 /*main (cards)*/
