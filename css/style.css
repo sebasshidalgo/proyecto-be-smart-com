@@ -17,7 +17,7 @@ header {
 
 main {
   background-color: rgba(236, 138, 245, 0.555);
-  min-height: 949px;
+  min-height: 1100px;
 }
 
 footer {
@@ -31,20 +31,18 @@ footer {
 
 .banner {
   font-family: "Exo 2", sans-serif;
-  width: 500px;
+  width: max-content;
   font-size: 45px;
   background-color: rgba(146, 54, 233, 0.918);
   border-radius: 30px 0px 30px 0px;
-  margin-left: 25px;
-  margin-bottom: 25px;
-  position: relative;
-  top: 15px;
   grid-area: banner;
+  margin: 1%;
 }
 
 h1 {
   color: white;
   text-align: center;
+  width: 470px;
 }
 
 .banner h1 a {
@@ -57,9 +55,10 @@ h1 {
 .menuProductos {
   text-align: center;
   display: flex;
-  justify-content: left;
+  justify-content: initial;
+  flex-wrap: wrap;
   list-style: none;
-  margin-right: 15px;
+  margin-bottom: 5px;
 }
 
 .menuProductos li a {
@@ -73,12 +72,11 @@ h1 {
 /*barra de navegacion*/
 
 .navBar {
-  text-align: center;
+  width: 100%;
   display: flex;
-  margin-left: 15px;
-  justify-content: right;
+  justify-content: end;
   grid-area: navBar;
-  padding-right: 80px;
+  /*flex-wrap: wrap;*/
 }
 
 .navBar li {
@@ -104,6 +102,7 @@ h1 {
   padding: 1px;
   margin-right: 5px;
   width: 150px;
+  margin-top: 5px;
 }
 
 .prod {
@@ -240,12 +239,10 @@ legend {
 
 .grid-container-1 {
   display: grid;
-  width: 100%;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 70% 30%);
   grid-template-rows: repeat(1, 1fr);
   grid-template-areas: 
-  "banner banner navBar";
-  justify-content: center;
+  "banner navBar";
   align-items: center;
 }
 
@@ -253,23 +250,24 @@ legend {
 
 .grid-container-1-bis{
   display: grid;
-  width: 100%;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas: 
-  "banner banner banner"
-  "nav-2 none nav-1";
-  justify-content: center;
+  "banner banner"
+  "nav-2 nav-1";
   align-items: center;
 }
 
 .nav-1{
   grid-area: nav-1;
+  width: 100%;
+  display: flex;
+  justify-content: end;
 }
 
 .nav-2{
+  width: 82%;
   grid-area: nav-2;
-  margin-left: 25px;
 }
 
 /*main (cards)*/
@@ -286,6 +284,7 @@ legend {
     "box-3 box-4";
 }
 .box-0 {
+  width: 100%;
   grid-area: box-0;
   display: flex;
   flex-direction: column;
@@ -293,24 +292,28 @@ legend {
   justify-content: center;
 }
 .box-1 {
+  width: 100%;
   grid-area: box-1;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .box-2 {
+  width: 100%;
   grid-area: box-2;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .box-3 {
+  width: 100%;
   grid-area: box-3;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .box-4 {
+  width: 100%;
   grid-area: box-4;
   display: flex;
   flex-direction: column;
@@ -351,8 +354,36 @@ legend {
 /***RESPONSIVE WEB DESIGN***/
 
 
-
+/***TABLET***/
 @media (max-width: 768px){
+  main{
+    background-color:rgba(177, 116, 233, 0.671);
+  }
+  .boton{
+    background-color: #EC2DECB0;
+  }
+  
+  .grid-container-1{
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: 
+    "banner navBar";
+  }
+
+  .grid-container-1-bis{
+    background-color: aquamarine;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "banner nav-1"
+    "nav-2 nav-2";
+    justify-content: center;
+    align-items: center;
+  }
+
   .grid-container-2 {
     width: 100%;
     grid-row-gap: 0px;
@@ -365,7 +396,8 @@ legend {
       ;
   }
   .box-0{
-    font-size:50px;
+    width: 100%;
+    font-size:30px;
     text-decoration: underline;
     background-color:rgba(177, 116, 233, 0.671);
     
@@ -382,12 +414,140 @@ legend {
   .box-4{
     background-color: rgba(103, 43, 243, 0.651);
   }
+  .box-img{
+    width: 200px;
+    height: auto;
 }
+.banner {
+  display: flex;
+  justify-content: center;
+  font-family: "Exo 2", sans-serif;
+  width: 250px;
+  font-size: 20px;
+  background-color: rgba(146, 54, 233, 0.918);
+  border-radius: 30px 0px 30px 0px;
+  grid-area: banner;
+  margin: 1%;
+}
+h1 {
+  color: white;
+  text-align: center;
+  width: 200px;
+}
+.nav-2{
+  width: 82%;
+  grid-area: nav-2;
+}
+}
+/***MOBILE***/
+@media (max-width: 576px){
+  .grid-container-1{
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "banner" 
+    "navBar";
+  }
 
+  .grid-container-1-bis{
+    background-color: aquamarine;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "banner nav-2" 
+    "nav-1"; 
+    justify-content: center;
+    align-items: center;
+  }
 
+  .grid-container-2 {
+    width: 100%;
+    grid-row-gap: 0px;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+      "box-0" 
+      "box-1" 
+      "box-2" 
+      "box-3" 
+      "box-4"
+      ;
+  }
+  .box-0{
+    width: 100%;
+    grid-area: box-0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+    background-color:rgba(177, 116, 233, 0.671);
+    
+  }
+  .box-1{
+    background-color: lightcoral
+  }
+  .box-2{
+    background-color: lightsalmon;
+  }
+  .box-3{
+    background-color: lightgreen;
+  }
+  .box-4{
+    background-color: lightslategrey;
+  }
+  .box-img{
+    width: 175px;
+    height: auto;
+  }
+  .banner {
+    font-family: "Exo 2", sans-serif;
+    width: max-content;
+    font-size: 15px;
+    background-color: rgba(146, 54, 233, 0.918);
+    border-radius: 30px 0px 30px 0px;
+    grid-area: banner;
+    margin: 1%;
+  }
+  h1 {
+    color: white;
+    text-align: center;
+    width: 200px;
+  }
+  .menuProductos li a {
+    font-family: "Exo 2", sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(42, 6, 126);
+    line-height: 1.4;
+  }
+  .navBar li a {
+    font-family: "Exo 2", sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgba(23, 7, 61, 0.945);
+    line-height: 1.4;
+    justify-content: flex-start;
+    display: flex;
+  }
+  .nav-1 {
+  width: 70%;
+  display: flex;
+  justify-content: end;
+  }
+  .nav-2 {
+    width: 80%;
+    grid-area: nav-2;
+  }
 
-
-
-
-
+  .navBar {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    grid-area: navBar;
+  }
+}
 
