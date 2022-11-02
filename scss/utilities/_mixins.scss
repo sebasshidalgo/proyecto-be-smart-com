@@ -1,0 +1,64 @@
+@mixin props-banner {
+    font-family: "Exo 2", sans-serif;
+    width: max-content;
+    font-size: 45px;
+    background-color: rgba(146, 54, 233, 0.918);
+    border-radius: 30px 0px 30px 0px;
+    grid-area: banner;
+    margin: 1%;
+}
+
+@mixin text-banner{
+    color: white;
+    text-align: center;
+    width: 470px;
+    text-decoration: none;
+}
+
+@mixin props-flex-navBar{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    grid-area: navBar;
+}
+
+@mixin text-navBar{
+    font-family: "Exo 2", sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: rgba(23, 7, 61, 0.945);
+    line-height: 1.4;
+    justify-content: flex-start;
+    display: flex;
+    margin-left: 15px;
+}
+
+@mixin props-flex-menuProductos{
+    text-align: center;
+    display: flex;
+    justify-content: initial;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+@mixin text-menuProductos{
+    font-family: "Exo 2", sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(42, 6, 126);
+    line-height: 1.4;
+}
+/***ESTO ES ASI???***/
+@mixin grid-containers ($width,$column,$row,$gap,$area,$alignItems,$justifyItems,$justifyContent){
+    display: grid;
+    width: $width;
+    grid-template-columns: $column;
+    grid-template-rows: $row;
+    grid-row-gap: $gap;
+    grid-template-areas: $area;
+    align-items: $alignItems;
+    justify-items: $justifyItems;
+    justify-content: $justifyContent;
+}
+
