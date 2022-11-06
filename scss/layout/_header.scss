@@ -1,28 +1,42 @@
 header {
     background-color: rgba(37, 104, 248, 0.815);
+}
 
-    .banner {
-        @include props-banner;
-    }
+    .grid-container-1{
+        display: grid;
+        grid-template-columns: repeat(2, 70% 30%);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: 
+        "banner navBar";
+        align-items: center;
 
-    h1 {
-        @include text-banner;
-    }
-
-    h1 a {
-        @include text-banner;
-    }
-
-    .navBar {
-        @include props-flex-navBar;
-
-        li {
-            list-style: none;
-
-            a {
-                @include text-navBar;
+        .banner {
+            grid-area: banner;
+            @include props-banner;
+        }
+    
+        h1 {
+            @include text-banner;
+        }
+    
+        h1 a {
+            @include text-banner;
+        }
+    
+        .navBar {
+            grid-area: navBar;
+            @include props-flex-navBar;
+    
+            li {
+                list-style: none;
+    
+                a {
+                    @include text-navBar;
+                }
             }
         }
+
+
 
         & li:hover {
             -webkit-animation: jello-horizontal 0.9s both;
@@ -176,8 +190,3 @@ header {
     }
   }
     }
-
-    .grid-container-1{
-        @include grid-containers(none,2 70% 30%,1 1fr,none,"banner navBar",center,none,none);
-    }
-}

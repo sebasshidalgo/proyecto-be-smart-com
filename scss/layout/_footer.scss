@@ -1,0 +1,36 @@
+footer {
+    background-color: rgba(18, 143, 245, 0.473);
+    font-family: "Roboto Mono", monospace;
+    font-size: 12px;
+    display: flex;}
+
+    .grid-container-3 {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+
+        .social-media {
+            text-align: center;
+            grid-column: 1/4;
+            grid-row: 1/2;
+        }
+    
+        .facebook {
+            grid-column: 1/2;
+            grid-row: 2/2;
+        }
+    
+        .instagram {
+            grid-column: 2/3;
+            grid-row: 2/2;
+        }
+    
+        .twitter {
+            grid-column: 3/4;
+            grid-row: 2/2;
+        }
+    }
+
+   
