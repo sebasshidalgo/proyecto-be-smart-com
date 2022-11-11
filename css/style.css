@@ -163,6 +163,10 @@ header {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); } }
 
+main {
+  background-color: rgba(236, 138, 245, 0.555);
+  min-height: 1100px; }
+
 footer {
   background-color: rgba(18, 143, 245, 0.473);
   font-family: "Roboto Mono", monospace;
