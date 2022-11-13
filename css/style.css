@@ -100,22 +100,118 @@ header {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); } }
 
-.menuProductos {
-  text-align: center;
-  display: flex;
-  justify-content: initial;
-  flex-wrap: wrap;
-  list-style: none;
-  margin-bottom: 5px; }
-  .menuProductos li a {
+.grid-container-1-bis {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "banner banner" "nav-2 nav-1";
+  align-items: center; }
+  .grid-container-1-bis .nav-1 {
+    grid-area: nav-1;
+    width: 100%;
+    display: flex;
+    justify-content: end; }
+  .grid-container-1-bis .nav-2 {
+    width: 82%;
+    grid-area: nav-2; }
+  .grid-container-1-bis .banner {
+    grid-area: banner;
     font-family: "Exo 2", sans-serif;
-    font-size: 25px;
-    text-decoration: none;
-    color: #2a067e;
-    line-height: 1.4; }
-  .menuProductos li:hover {
-    -webkit-animation: jello-vertical 0.9s both;
-    animation: jello-vertical 0.9s both; }
+    width: max-content;
+    font-size: 45px;
+    background-color: rgba(146, 54, 233, 0.918);
+    border-radius: 30px 0px 30px 0px; }
+  .grid-container-1-bis h1 {
+    color: white;
+    text-align: center;
+    width: 470px;
+    text-decoration: none; }
+  .grid-container-1-bis h1 a {
+    color: white;
+    text-align: center;
+    width: 470px;
+    text-decoration: none; }
+  .grid-container-1-bis .navBar {
+    grid-area: nav-1;
+    width: 100%;
+    display: flex;
+    justify-content: end; }
+    .grid-container-1-bis .navBar li {
+      list-style: none; }
+      .grid-container-1-bis .navBar li a {
+        font-family: "Exo 2", sans-serif;
+        font-size: 25px;
+        text-decoration: none;
+        color: rgba(23, 7, 61, 0.945);
+        line-height: 1.4;
+        justify-content: flex-start;
+        display: flex;
+        margin-left: 15px; }
+  .grid-container-1-bis li:hover {
+    -webkit-animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s both; }
+
+@-webkit-keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1); }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1); }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1); }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1); }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1); }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1); }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1); }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1); }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1); }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1); }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+  .grid-container-1-bis .menuProductos {
+    text-align: center;
+    display: flex;
+    justify-content: initial;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: 5px; }
+    .grid-container-1-bis .menuProductos li a {
+      font-family: "Exo 2", sans-serif;
+      font-size: 25px;
+      text-decoration: none;
+      color: #2a067e;
+      line-height: 1.4; }
+    .grid-container-1-bis .menuProductos li:hover {
+      -webkit-animation: jello-vertical 0.9s both;
+      animation: jello-vertical 0.9s both; }
 
 @-webkit-keyframes jello-vertical {
   0% {
@@ -167,6 +263,199 @@ main {
   background-color: rgba(236, 138, 245, 0.555);
   min-height: 1100px; }
 
+.grid-container-2 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 100px, repeat(2, 1fr);
+  grid-row-gap: 50px;
+  grid-template-areas: "box-0 box-0" "box-1 box-2" "box-3 box-4"; }
+  .grid-container-2 .box-0 {
+    width: 100%;
+    grid-area: box-0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .grid-container-2 .box-1 {
+    width: 100%;
+    grid-area: box-1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .grid-container-2 .box-2 {
+    width: 100%;
+    grid-area: box-2;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .grid-container-2 .box-3 {
+    width: 100%;
+    grid-area: box-3;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .grid-container-2 .box-4 {
+    width: 100%;
+    grid-area: box-4;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .grid-container-2 .box-img:hover {
+    -webkit-animation: wobble-hor-bottom 0.8s both;
+    animation: wobble-hor-bottom 0.8s both; }
+
+@-webkit-keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%; }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+    transform: translateX(-30px) rotate(-6deg); }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+    transform: translateX(15px) rotate(6deg); }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+    transform: translateX(-15px) rotate(-3.6deg); }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+    transform: translateX(9px) rotate(2.4deg); }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+    transform: translateX(-6px) rotate(-1.2deg); } }
+
+@keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%; }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+    transform: translateX(-30px) rotate(-6deg); }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+    transform: translateX(15px) rotate(6deg); }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+    transform: translateX(-15px) rotate(-3.6deg); }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+    transform: translateX(9px) rotate(2.4deg); }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+    transform: translateX(-6px) rotate(-1.2deg); } }
+
+.productos {
+  text-decoration: none;
+  font-family: "Exo 2", sans-serif;
+  font-size: 30px;
+  color: black;
+  text-align: center; }
+
+.subtitulos {
+  font-family: "Exo 2", sans-serif;
+  font-size: 20px;
+  padding-left: 15px;
+  padding-bottom: 5px; }
+
+.caracteristicas {
+  font-family: "Roboto Mono", monospace;
+  padding-left: 15px; }
+
+.especificaciones {
+  font-family: "Roboto Mono", monospace;
+  font-style: italic;
+  padding-top: 5px;
+  list-style: none;
+  padding-bottom: 10px; }
+
+.videos {
+  display: flex;
+  justify-content: center;
+  padding-top: 2px;
+  padding-bottom: 10px; }
+
+.noticias {
+  font-family: "Exo 2", sans-serif;
+  font-size: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px; }
+
+.subtitulos h4 {
+  text-align: center;
+  font-size: 30px;
+  text-decoration: underline; }
+
+.subtitulos h2 {
+  padding-bottom: 2px; }
+
+.noticias p {
+  font-style: italic;
+  padding-top: 3px;
+  margin-right: 3px; }
+
+legend {
+  font-family: "Roboto Mono", monospace;
+  font-style: oblique;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  font-size: 20px; }
+
+.consultas label {
+  font-family: "Roboto Mono", monospace;
+  font-size: 15px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column; }
+
+.casilleros {
+  width: 400px; }
+
+.tC {
+  position: relative;
+  align-self: flex-start;
+  margin-left: 15px;
+  margin-bottom: 10px; }
+
+.enviarFormulario {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  font-family: "Exo 2", sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+  padding: 3px;
+  background-color: rgba(28, 96, 241, 0.61); }
+
+.contactInfo {
+  font-family: "Exo 2", sans-serif;
+  font-size: 25px;
+  margin-left: 15px;
+  margin-bottom: 10px; }
+
+.contactData {
+  font-family: "Roboto Mono", monospace;
+  font-size: 15px;
+  font-style: oblique;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  line-height: 2;
+  list-style: none; }
+
+.mapa {
+  margin-left: 15px;
+  padding-bottom: 10px;
+  display: flex; }
+
+.comprar {
+  background-color: rgba(28, 96, 241, 0.61); }
+
 footer {
   background-color: rgba(18, 143, 245, 0.473);
   font-family: "Roboto Mono", monospace;
@@ -203,3 +492,142 @@ footer {
 
 .prod {
   background-color: rgba(236, 45, 236, 0.692); }
+
+@media (max-width: 768px) {
+  main {
+    background-color: rgba(177, 116, 233, 0.671); }
+  .boton {
+    background-color: #EC2DECB0; }
+  .grid-container-1 {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "banner navBar"; }
+  .grid-container-1-bis {
+    background-color: aquamarine;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "banner nav-1" "nav-2 nav-2";
+    justify-content: center;
+    align-items: center; }
+  .grid-container-2 {
+    width: 100%;
+    grid-row-gap: 0px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "box-0 box-0" "box-3 box-1"  "box-4 box-2"; }
+  .box-0 {
+    width: 100%;
+    font-size: 30px;
+    text-decoration: underline;
+    background-color: rgba(177, 116, 233, 0.671); }
+  .box-1 {
+    background-color: rgba(248, 245, 48, 0.788); }
+  .box-2 {
+    background-color: palegreen; }
+  .box-3 {
+    background-color: #f85a89; }
+  .box-4 {
+    background-color: rgba(103, 43, 243, 0.651); }
+  .box-img {
+    width: 200px;
+    height: auto; }
+  .banner {
+    display: flex;
+    justify-content: center;
+    font-family: "Exo 2", sans-serif;
+    width: 250px;
+    font-size: 20px;
+    background-color: rgba(146, 54, 233, 0.918);
+    border-radius: 30px 0px 30px 0px;
+    grid-area: banner;
+    margin: 1%; }
+  h1 {
+    color: white;
+    text-align: center;
+    width: 200px; }
+  .nav-2 {
+    width: 82%;
+    grid-area: nav-2; } }
+
+@media (max-width: 576px) {
+  .grid-container-1 {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "banner" "navBar"; }
+  .grid-container-1-bis {
+    background-color: aquamarine;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "banner nav-2" "nav-1";
+    justify-content: center;
+    align-items: center; }
+  .grid-container-2 {
+    width: 100%;
+    grid-row-gap: 0px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "box-0" "box-1" "box-2" "box-3" "box-4"; }
+  .box-0 {
+    width: 100%;
+    grid-area: box-0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+    background-color: rgba(177, 116, 233, 0.671); }
+  .box-1 {
+    background-color: lightcoral; }
+  .box-2 {
+    background-color: lightsalmon; }
+  .box-3 {
+    background-color: lightgreen; }
+  .box-4 {
+    background-color: lightslategrey; }
+  .box-img {
+    width: 175px;
+    height: auto; }
+  .banner {
+    font-family: "Exo 2", sans-serif;
+    width: max-content;
+    font-size: 15px;
+    background-color: rgba(146, 54, 233, 0.918);
+    border-radius: 30px 0px 30px 0px;
+    grid-area: banner;
+    margin: 1%; }
+  h1 {
+    color: white;
+    text-align: center;
+    width: 200px; }
+  .menuProductos li a {
+    font-family: "Exo 2", sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: #2a067e;
+    line-height: 1.4; }
+  .navBar li a {
+    font-family: "Exo 2", sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgba(23, 7, 61, 0.945);
+    line-height: 1.4;
+    justify-content: flex-start;
+    display: flex; }
+  .nav-1 {
+    width: 70%;
+    display: flex;
+    justify-content: end; }
+  .nav-2 {
+    width: 80%;
+    grid-area: nav-2; }
+  .navBar {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    grid-area: navBar; } }
