@@ -1,13 +1,15 @@
 @media (max-width: 768px){
     main{
-      background-color:rgba(177, 116, 233, 0.671);
+      min-height: 1000px;
+      background-color: rgba(177, 116, 233, 0.671);
     }
     .boton{
-      background-color: #EC2DECB0;
+      background-color: rgba(236, 45, 236, 0.692);
     }
     
     .grid-container-1{
       width: 100%;
+      background-color: rgba(45, 191, 236, 0.918);
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(1, 1fr);
       grid-template-areas: 
@@ -15,7 +17,7 @@
     }
   
     .grid-container-1-bis{
-      background-color: aquamarine;
+      background-color: rgba(45, 191, 236, 0.918);
       display: grid;
       width: 100%;
       grid-template-columns: repeat(2, 1fr);
@@ -41,21 +43,22 @@
     .box-0{
       width: 100%;
       font-size:30px;
+      color: whitesmoke;
       text-decoration: underline;
       background-color:rgba(177, 116, 233, 0.671);
       
     }
     .box-1{
-      background-color: rgba(248, 245, 48, 0.788);
+      background-color: rgba(177, 116, 233, 0.671);
     }
     .box-2{
-      background-color: palegreen;
+      background-color: rgba(177, 116, 233, 0.671);
     }
     .box-3{
-      background-color: rgb(248, 90, 137);
+      background-color: rgba(177, 116, 233, 0.671);
     }
     .box-4{
-      background-color: rgba(103, 43, 243, 0.651);
+      background-color: rgba(177, 116, 233, 0.671);
     }
     .box-img{
       width: 200px;
@@ -80,5 +83,14 @@
   .nav-2{
     width: 82%;
     grid-area: nav-2;
+  }
+  .productos{
+    color:white;
+  }
+  .caracteristicas{
+    color:white; /*ACA PUEDO CREAR VARIABLE CON COLORES*/
+  }
+  footer{
+    background-color:rgba(45, 191, 236, 0.623);
   }
   }

@@ -261,7 +261,7 @@ header {
 
 main {
   background-color: rgba(236, 138, 245, 0.555);
-  min-height: 1100px; }
+  min-height: 1000px; }
 
 .grid-container-2 {
   display: grid;
@@ -454,7 +454,9 @@ legend {
   display: flex; }
 
 .comprar {
-  background-color: rgba(28, 96, 241, 0.61); }
+  background-color: rgba(240, 227, 238, 0.829);
+  border-radius: 10%;
+  font-size: 20px; }
 
 footer {
   background-color: rgba(18, 143, 245, 0.473);
@@ -495,16 +497,18 @@ footer {
 
 @media (max-width: 768px) {
   main {
+    min-height: 1000px;
     background-color: rgba(177, 116, 233, 0.671); }
   .boton {
-    background-color: #EC2DECB0; }
+    background-color: rgba(236, 45, 236, 0.692); }
   .grid-container-1 {
     width: 100%;
+    background-color: rgba(45, 191, 236, 0.918);
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
     grid-template-areas: "banner navBar"; }
   .grid-container-1-bis {
-    background-color: aquamarine;
+    background-color: rgba(45, 191, 236, 0.918);
     display: grid;
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
@@ -521,16 +525,17 @@ footer {
   .box-0 {
     width: 100%;
     font-size: 30px;
+    color: whitesmoke;
     text-decoration: underline;
     background-color: rgba(177, 116, 233, 0.671); }
   .box-1 {
-    background-color: rgba(248, 245, 48, 0.788); }
+    background-color: rgba(177, 116, 233, 0.671); }
   .box-2 {
-    background-color: palegreen; }
+    background-color: rgba(177, 116, 233, 0.671); }
   .box-3 {
-    background-color: #f85a89; }
+    background-color: rgba(177, 116, 233, 0.671); }
   .box-4 {
-    background-color: rgba(103, 43, 243, 0.651); }
+    background-color: rgba(177, 116, 233, 0.671); }
   .box-img {
     width: 200px;
     height: auto; }
@@ -550,7 +555,14 @@ footer {
     width: 200px; }
   .nav-2 {
     width: 82%;
-    grid-area: nav-2; } }
+    grid-area: nav-2; }
+  .productos {
+    color: white; }
+  .caracteristicas {
+    color: white;
+    /*ACA PUEDO CREAR VARIABLE CON COLORES*/ }
+  footer {
+    background-color: rgba(45, 191, 236, 0.623); } }
 
 @media (max-width: 576px) {
   .grid-container-1 {
