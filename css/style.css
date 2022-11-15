@@ -559,19 +559,21 @@ footer {
   .productos {
     color: white; }
   .caracteristicas {
-    color: white;
-    /*ACA PUEDO CREAR VARIABLE CON COLORES*/ }
+    color: black; }
+  .especificaciones {
+    color: whitesmoke; }
   footer {
-    background-color: rgba(45, 191, 236, 0.623); } }
+    background-color: rgba(45, 191, 236, 0.918); } }
 
 @media (max-width: 576px) {
   .grid-container-1 {
     width: 100%;
+    background-color: rgba(177, 116, 233, 0.671);
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "banner" "navBar"; }
   .grid-container-1-bis {
-    background-color: aquamarine;
+    background-color: rgba(177, 116, 233, 0.671);
     display: grid;
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
@@ -593,15 +595,15 @@ footer {
     align-items: center;
     justify-content: center;
     text-decoration: underline;
-    background-color: rgba(177, 116, 233, 0.671); }
+    background-color: #2DC6F5; }
   .box-1 {
-    background-color: lightcoral; }
+    background-color: rgba(236, 45, 236, 0.692); }
   .box-2 {
-    background-color: lightsalmon; }
+    background-color: #2DC6F5; }
   .box-3 {
-    background-color: lightgreen; }
+    background-color: rgba(236, 45, 236, 0.692); }
   .box-4 {
-    background-color: lightslategrey; }
+    background-color: #2DC6F5; }
   .box-img {
     width: 175px;
     height: auto; }
@@ -642,4 +644,6 @@ footer {
     width: 100%;
     display: flex;
     justify-content: end;
-    grid-area: navBar; } }
+    grid-area: navBar; }
+  footer {
+    background-color: rgba(18, 143, 245, 0.473); } }
