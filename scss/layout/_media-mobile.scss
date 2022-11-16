@@ -6,21 +6,75 @@
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas:
             "banner"
-            "navBar";
+            "navBar";   
+      
+    .banner {
+        grid-area: banner;
+        display: flex;
+        justify-content: none;
+        text-align: center;
+        font-family: "Exo 2", sans-serif;
+        width: 364px;
+        height: 63px;
+        line-height: 49px;
+        font-size: 33px;
+        background-color: rgba(146, 54, 233, 0.918);
+        border-radius: 30px 0px 30px 0px;
+        margin: 1%;
+    }
+    .navBar {
+        width: 80%;
+        display: flex;
+        justify-content: end;
+        grid-area: navBar;
+    }
+}   
+    .navBar li a {
+        font-family: "Exo 2", sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(42, 6, 126);
+    line-height: 1.4;
     }
 
     .grid-container-1-bis {
         background-color: rgba(177, 116, 233, 0.671);
         display: grid;
         width: 100%;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         grid-template-areas:
-            "banner nav-2"
-            "nav-1";
+            "banner "
+            "nav-1"
+            "nav-2 ";
         justify-content: center;
         align-items: center;
+        .banner{ 
+            grid-area: banner;
+            display: flex;
+            justify-content: flex-start;
+            text-align: center;
+            font-family: "Exo 2", sans-serif;
+            width: 364px;
+            height: 63px;
+            line-height: 49px;
+            font-size: 33px;
+            background-color: rgba(146, 54, 233, 0.918);
+            border-radius: 30px 0px 30px 0px;
+            margin: 1%;
+        }
+    
+    .navBar {
+        width: 60%;
+        display: flex;
+        justify-content:flex-start;
+        grid-area: navBar;
     }
+    .nav-2 {
+        width: 100%;
+        grid-area: nav-2;
+    }
+}
 
     .grid-container-2 {
         width: 100%;
@@ -38,6 +92,7 @@
 
     .box-0 {
         width: 100%;
+        font-size:25px;
         grid-area: box-0;
         display: flex;
         flex-direction: column;
@@ -45,8 +100,8 @@
         justify-content: center;
         text-decoration: underline;
         background-color: #2DC6F5;
-
     }
+
 
     .box-1 {
         background-color: rgba(236, 45, 236, 0.692);
@@ -69,23 +124,14 @@
         height: auto;
     }
 
-    .banner {
-        font-family: "Exo 2", sans-serif;
-        width: max-content;
-        font-size: 15px;
-        background-color: rgba(146, 54, 233, 0.918);
-        border-radius: 30px 0px 30px 0px;
-        grid-area: banner;
-        margin: 1%;
-    }
 
     h1 {
         color: white;
-        text-align: center;
-        width: 200px;
+        text-align: none;
+        width: 100%;
     }
 
-    .menuProductos li a {
+    .menuProductos li {
         font-family: "Exo 2", sans-serif;
         font-size: 15px;
         text-decoration: none;
@@ -93,33 +139,12 @@
         line-height: 1.4;
     }
 
-    .navBar li a {
-        font-family: "Exo 2", sans-serif;
-        font-size: 15px;
-        text-decoration: none;
-        color: rgba(23, 7, 61, 0.945);
-        line-height: 1.4;
-        justify-content: flex-start;
-        display: flex;
-    }
+    a{
+        color: rgba(237, 237, 238, 0.945);  
+      }
 
-    .nav-1 {
-        width: 70%;
-        display: flex;
-        justify-content: end;
-    }
 
-    .nav-2 {
-        width: 80%;
-        grid-area: nav-2;
-    }
 
-    .navBar {
-        width: 100%;
-        display: flex;
-        justify-content: end;
-        grid-area: navBar;
-    }
     footer{
         background-color:rgba(18, 143, 245, 0.473);
     }

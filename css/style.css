@@ -13,46 +13,51 @@ header {
 
 .grid-container-1 {
   display: grid;
-  grid-template-columns: repeat(2, 70% 30%);
+  grid-template-columns: repeat(2, 60% 40%);
   grid-template-rows: repeat(1, 1fr);
   grid-template-areas: "banner navBar";
   align-items: center; }
   .grid-container-1 .banner {
     grid-area: banner;
+    grid-area: banner;
+    display: flex;
+    text-align: center;
+    justify-content: center;
     font-family: "Exo 2", sans-serif;
-    width: max-content;
+    width: 478px;
     font-size: 45px;
     background-color: rgba(146, 54, 233, 0.918);
-    border-radius: 30px 0px 30px 0px; }
-  .grid-container-1 h1 {
-    color: white;
-    text-align: center;
-    width: 470px;
-    text-decoration: none; }
-  .grid-container-1 h1 a {
-    color: white;
-    text-align: center;
-    width: 470px;
-    text-decoration: none; }
-  .grid-container-1 .navBar {
-    grid-area: navBar;
-    width: 100%;
-    display: flex;
-    justify-content: end; }
-    .grid-container-1 .navBar li {
-      list-style: none; }
-      .grid-container-1 .navBar li a {
-        font-family: "Exo 2", sans-serif;
-        font-size: 25px;
-        text-decoration: none;
-        color: rgba(23, 7, 61, 0.945);
-        line-height: 1.4;
-        justify-content: flex-start;
-        display: flex;
-        margin-left: 15px; }
-  .grid-container-1 li:hover {
-    -webkit-animation: jello-horizontal 0.9s both;
-    animation: jello-horizontal 0.9s both; }
+    border-radius: 30px 0px 30px 0px;
+    margin: 1%; }
+
+h1 {
+  color: white;
+  text-decoration: none; }
+
+h1 a {
+  color: white;
+  text-decoration: none; }
+
+.navBar {
+  grid-area: navBar;
+  width: 100%;
+  display: flex;
+  justify-content: end; }
+  .navBar li {
+    list-style: none; }
+    .navBar li a {
+      font-family: "Exo 2", sans-serif;
+      font-size: 25px;
+      text-decoration: none;
+      color: rgba(23, 7, 61, 0.945);
+      line-height: 1.4;
+      justify-content: flex-start;
+      display: flex;
+      margin-left: 15px; }
+
+.navBar li:hover {
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both; }
 
 @-webkit-keyframes jello-horizontal {
   0% {
@@ -116,20 +121,21 @@ header {
     grid-area: nav-2; }
   .grid-container-1-bis .banner {
     grid-area: banner;
+    grid-area: banner;
+    display: flex;
+    text-align: center;
+    justify-content: center;
     font-family: "Exo 2", sans-serif;
-    width: max-content;
+    width: 478px;
     font-size: 45px;
     background-color: rgba(146, 54, 233, 0.918);
-    border-radius: 30px 0px 30px 0px; }
+    border-radius: 30px 0px 30px 0px;
+    margin: 1%; }
   .grid-container-1-bis h1 {
     color: white;
-    text-align: center;
-    width: 470px;
     text-decoration: none; }
   .grid-container-1-bis h1 a {
     color: white;
-    text-align: center;
-    width: 470px;
     text-decoration: none; }
   .grid-container-1-bis .navBar {
     grid-area: nav-1;
@@ -199,7 +205,7 @@ header {
   .grid-container-1-bis .menuProductos {
     text-align: center;
     display: flex;
-    justify-content: initial;
+    justify-content: space-around;
     flex-wrap: wrap;
     list-style: none;
     margin-bottom: 5px; }
@@ -261,7 +267,7 @@ header {
 
 main {
   background-color: rgba(236, 138, 245, 0.555);
-  min-height: 1000px; }
+  height: auto; }
 
 .grid-container-2 {
   display: grid;
@@ -497,7 +503,6 @@ footer {
 
 @media (max-width: 768px) {
   main {
-    min-height: 1000px;
     background-color: rgba(177, 116, 233, 0.671); }
   .boton {
     background-color: rgba(236, 45, 236, 0.692); }
@@ -507,6 +512,22 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
     grid-template-areas: "banner navBar"; }
+    .grid-container-1 .banner {
+      grid-area: banner;
+      display: flex;
+      justify-content: none;
+      font-family: "Exo 2", sans-serif;
+      width: 400px;
+      font-size: 35px;
+      background-color: rgba(146, 54, 233, 0.918);
+      border-radius: 30px 0px 30px 0px;
+      margin: 1%; }
+  .navBar {
+    grid-area: navBar;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap; }
   .grid-container-1-bis {
     background-color: rgba(45, 191, 236, 0.918);
     display: grid;
@@ -516,6 +537,19 @@ footer {
     grid-template-areas: "banner nav-1" "nav-2 nav-2";
     justify-content: center;
     align-items: center; }
+    .grid-container-1-bis .banner {
+      grid-area: banner;
+      display: flex;
+      justify-content: none;
+      text-align: center;
+      font-family: "Exo 2", sans-serif;
+      width: 364px;
+      height: 63px;
+      line-height: 49px;
+      font-size: 33px;
+      background-color: rgba(146, 54, 233, 0.918);
+      border-radius: 30px 0px 30px 0px;
+      margin: 1%; }
   .grid-container-2 {
     width: 100%;
     grid-row-gap: 0px;
@@ -539,20 +573,10 @@ footer {
   .box-img {
     width: 200px;
     height: auto; }
-  .banner {
-    display: flex;
-    justify-content: center;
-    font-family: "Exo 2", sans-serif;
-    width: 250px;
-    font-size: 20px;
-    background-color: rgba(146, 54, 233, 0.918);
-    border-radius: 30px 0px 30px 0px;
-    grid-area: banner;
-    margin: 1%; }
   h1 {
     color: white;
-    text-align: center;
-    width: 200px; }
+    text-align: none;
+    width: 100%; }
   .nav-2 {
     width: 82%;
     grid-area: nav-2; }
@@ -572,15 +596,60 @@ footer {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "banner" "navBar"; }
+    .grid-container-1 .banner {
+      grid-area: banner;
+      display: flex;
+      justify-content: none;
+      text-align: center;
+      font-family: "Exo 2", sans-serif;
+      width: 364px;
+      height: 63px;
+      line-height: 49px;
+      font-size: 33px;
+      background-color: rgba(146, 54, 233, 0.918);
+      border-radius: 30px 0px 30px 0px;
+      margin: 1%; }
+    .grid-container-1 .navBar {
+      width: 80%;
+      display: flex;
+      justify-content: end;
+      grid-area: navBar; }
+  .navBar li a {
+    font-family: "Exo 2", sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: #2a067e;
+    line-height: 1.4; }
   .grid-container-1-bis {
     background-color: rgba(177, 116, 233, 0.671);
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "banner nav-2" "nav-1";
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "banner " "nav-1" "nav-2 ";
     justify-content: center;
     align-items: center; }
+    .grid-container-1-bis .banner {
+      grid-area: banner;
+      display: flex;
+      justify-content: flex-start;
+      text-align: center;
+      font-family: "Exo 2", sans-serif;
+      width: 364px;
+      height: 63px;
+      line-height: 49px;
+      font-size: 33px;
+      background-color: rgba(146, 54, 233, 0.918);
+      border-radius: 30px 0px 30px 0px;
+      margin: 1%; }
+    .grid-container-1-bis .navBar {
+      width: 60%;
+      display: flex;
+      justify-content: flex-start;
+      grid-area: navBar; }
+    .grid-container-1-bis .nav-2 {
+      width: 100%;
+      grid-area: nav-2; }
   .grid-container-2 {
     width: 100%;
     grid-row-gap: 0px;
@@ -589,6 +658,7 @@ footer {
     grid-template-areas: "box-0" "box-1" "box-2" "box-3" "box-4"; }
   .box-0 {
     width: 100%;
+    font-size: 25px;
     grid-area: box-0;
     display: flex;
     flex-direction: column;
@@ -607,43 +677,17 @@ footer {
   .box-img {
     width: 175px;
     height: auto; }
-  .banner {
-    font-family: "Exo 2", sans-serif;
-    width: max-content;
-    font-size: 15px;
-    background-color: rgba(146, 54, 233, 0.918);
-    border-radius: 30px 0px 30px 0px;
-    grid-area: banner;
-    margin: 1%; }
   h1 {
     color: white;
-    text-align: center;
-    width: 200px; }
-  .menuProductos li a {
+    text-align: none;
+    width: 100%; }
+  .menuProductos li {
     font-family: "Exo 2", sans-serif;
     font-size: 15px;
     text-decoration: none;
     color: #2a067e;
     line-height: 1.4; }
-  .navBar li a {
-    font-family: "Exo 2", sans-serif;
-    font-size: 15px;
-    text-decoration: none;
-    color: rgba(23, 7, 61, 0.945);
-    line-height: 1.4;
-    justify-content: flex-start;
-    display: flex; }
-  .nav-1 {
-    width: 70%;
-    display: flex;
-    justify-content: end; }
-  .nav-2 {
-    width: 80%;
-    grid-area: nav-2; }
-  .navBar {
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    grid-area: navBar; }
+  a {
+    color: rgba(237, 237, 238, 0.945); }
   footer {
     background-color: rgba(18, 143, 245, 0.473); } }
