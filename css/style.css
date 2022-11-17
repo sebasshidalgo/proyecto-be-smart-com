@@ -602,7 +602,7 @@ footer {
       justify-content: none;
       text-align: center;
       font-family: "Exo 2", sans-serif;
-      width: 364px;
+      width: 345px;
       height: 63px;
       line-height: 49px;
       font-size: 33px;
@@ -635,7 +635,7 @@ footer {
       justify-content: flex-start;
       text-align: center;
       font-family: "Exo 2", sans-serif;
-      width: 364px;
+      width: 345px;
       height: 63px;
       line-height: 49px;
       font-size: 33px;
@@ -689,5 +689,7 @@ footer {
     line-height: 1.4; }
   a {
     color: rgba(237, 237, 238, 0.945); }
+  .casilleros {
+    width: 240px; }
   footer {
     background-color: rgba(18, 143, 245, 0.473); } }
